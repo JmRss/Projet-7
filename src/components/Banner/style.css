@@ -1,0 +1,29 @@
+
+.bannerBackground, .banner_background{
+    position: absolute;
+    width: 1220px;
+    height: 223px;
+    left: 100px;
+    top: 171px;
+    border-radius: 25px;
+}
+.bannerBackground{
+    background-image: url(../../assets/images/banner.png);
+}
+.banner_background{
+    background: #000000;
+    mix-blend-mode: darken;
+    opacity: 0.3;
+    z-index:2;
+}
+.text_banner{
+
+    position: absolute;
+    right: 22.14%;
+    top: 45.32%;
+    bottom: 69.04%;
+    display: flex;
+    align-items: flex-end;
+    color:#ffffff;
+    z-index: 3;
+}

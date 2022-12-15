@@ -1,0 +1,38 @@
+
+.error_code{
+    font-size: 288px;
+    font-weight:700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-top: 350px;
+    margin-bottom: 0;
+}
+.error_page{
+    color:#FF6060;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.link{
+    color:#FF6060;
+    margin-top: 90px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+.accueil,
+.apropos{
+    text-decoration-line: none;
+}
+.error_text{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    /* or 51px */
+    display: flex;
+    align-items: flex-end;
+    margin-top: 0;
+}
+
