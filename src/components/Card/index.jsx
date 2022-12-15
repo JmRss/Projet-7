@@ -1,20 +1,25 @@
 import './style.css'
-import { lodging } from '../../datas/Lodging'
+import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 function Card() {
-  // const title = lodging.reduce(
-  //   (acc, elem) => (acc.includes(elem.title) ? acc : acc.concat(elem.title)),
-  //   []
-  // )
+  const [data, setData] = useState([])
+  useEffect(() => {
+    fetch('../lodging.json')
+      .then((res) => res.json())
+      .then((res2) => setData(res2))
+      .catch((error) => console.log(error))
+  }, [])
+
   return (
     <>
-      {lodging.map(({ title, cover }) => (
-        <div className='card'>
-          <p className='text_lodging' key={title}>
+      {data.map(({ title, cover, id, text }) => (
+        <Link to={id} className='card'>
+          <p className='text_lodging' key={text}>
             {title}
           </p>
-          <img src={cover} alt='photo logement' key={cover} className='cover' />
-        </div>
+          <img src={cover} alt='logement' key={cover} className='cover' />
+        </Link>
       ))}
     </>
   )

@@ -1,5 +1,5 @@
 
-.bannerBackground, .banner_background{
+.bannerBackgroundImg, .banner_background{
     position: absolute;
     width: 1220px;
     height: 223px;
@@ -7,7 +7,7 @@
     top: 171px;
     border-radius: 25px;
 }
-.bannerBackground{
+.bannerBackgroundImg{
     background-image: url(../../assets/images/banner.png);
 }
 .banner_background{

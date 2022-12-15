@@ -1,7 +1,7 @@
-import Header from '../Header'
-import Banner from '../Banner'
+import Header from '../../components/Header'
+import Banner from '../../components/Banner'
 import Body from './Body'
-import Footer from '../Footer'
+import Footer from '../../components/Footer'
 import './style.css'
 
 export default function Home() {

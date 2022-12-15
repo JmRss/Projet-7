@@ -1,11 +1,12 @@
 import './style.css'
 import Header from '../Header'
-import Footer from '../Footer'
+import Carrousel from '../Carrousel'
 
 function Lodging() {
   return (
     <>
       <Header />
+      <Carrousel />
     </>
   )
 }
