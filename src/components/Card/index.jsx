@@ -1,26 +1,15 @@
 import './style.css'
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
-
-function Card() {
-  const [data, setData] = useState([])
-  useEffect(() => {
-    fetch('../lodging.json')
-      .then((res) => res.json())
-      .then((res2) => setData(res2))
-      .catch((error) => console.log(error))
-  }, [])
-
+//recupére les props:
+function Card({ cover, title, id }) {
   return (
     <>
-      {data.map(({ title, cover, id, text }) => (
-        <Link to={id} className='card'>
-          <p className='text_lodging' key={text}>
-            {title}
-          </p>
-          <img src={cover} alt='logement' key={cover} className='cover' />
-        </Link>
-      ))}
+      <Link to={'/lodging/' + id} className='card'>
+        <p className='text_lodging' key={title + id}>
+          {title}
+        </p>
+        <img src={cover} alt='logement' key={cover + id} className='cover' />
+      </Link>
     </>
   )
 }

@@ -1,0 +1,12 @@
+.carrousel__background{
+    height: 415px;
+    width: 1200px;
+    border-radius: 25px;
+    margin-top: 25%;
+}
+.carrousel__background img{
+    height: 415px;
+    width: 1219px;
+    border-radius: 25px;
+    mix-blend-mode: normal;
+}

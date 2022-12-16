@@ -1,15 +1,20 @@
 import Header from '../../components/Header'
-import Banner from '../../components/Banner'
-import CollapseBar from '../../components/Collapse'
+import AboutBanner from '../../components/AboutBanner'
+import Collapse from '../../components/Collapse/index'
 import Footer from '../../components/Footer'
-import './style.css'
+import { dropdown } from '../../datas/Dropdown'
+import '../../components/Collapse/style.css'
 
 function About() {
   return (
     <>
       <Header />
-      <Banner />
-      <CollapseBar />
+      <AboutBanner />
+      <div className='dropdown__container'>
+        {dropdown.map(({ title, description }) => (
+          <Collapse title={title} description={description} />
+        ))}
+      </div>
       <Footer />
     </>
   )

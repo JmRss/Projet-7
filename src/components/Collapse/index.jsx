@@ -3,9 +3,8 @@ import './style.css'
 // //Un hook est une fonction qui permet de « se brancher » (to hook up) sur des fonctionnalités React
 import { useState } from 'react'
 import vector from '../../assets/images/Vector.png'
-import { dropdown } from '../../datas/Dropdown'
 
-function Collapse() {
+export default function Collapse({ title, description }) {
   // variables d'état
   const [isOpen, setIsOpen] = useState(false)
 
@@ -14,39 +13,23 @@ function Collapse() {
   }
 
   return isOpen ? (
-    <div className='dropdown__container'>
-      {dropdown.map(({ title, description }) => (
-        <>
-          <button
-            key={title}
-            className='button__collapse'
-            onClick={changeState}
-          >
-            {title}
-            <img src={vector} alt='button' className='button--rotate' />
-          </button>
-          <p key={description} className='collapse__description'>
-            {description}
-          </p>
-        </>
-      ))}
-    </div>
+    <>
+      <button key={title} className='button__collapse' onClick={changeState}>
+        {title}
+        <img src={vector} alt='button' className='button--rotate' />
+      </button>
+      <p key={description} className='collapse__description'>
+        {description}
+      </p>
+    </>
   ) : (
-    <div className='dropdown__container'>
-      {dropdown.map(({ title }) => (
-        <>
-          <button
-            key={title}
-            className='button__collapse--open'
-            onClick={changeState}
-          >
-            {title}
-            <img src={vector} alt='button' />
-          </button>
-        </>
-      ))}
-    </div>
+    <button
+      key={title}
+      className='button__collapse--open'
+      onClick={changeState}
+    >
+      {title}
+      <img src={vector} alt='button' />
+    </button>
   )
 }
-
-export default Collapse

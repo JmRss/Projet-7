@@ -1,12 +1,14 @@
 import './style.css'
-// import { lodging } from '../../datas/Lodging'
-// //but étant de voir chaque photo de l'appartemment en question
+// import { useParams } from 'react-router-dom'
+// import { useState, useEffect } from 'react'
 
-function Carrousel() {
+function Carrousel({ cover }) {
   return (
-    <div className='carrousel__background'>
-      <img src='' alt="photos d'appartemments" />
-    </div>
+    <>
+      <div className='carrousel__background'>
+        <img src={cover} alt="photos d'appartemments" key='' />
+      </div>
+    </>
   )
 }
 
