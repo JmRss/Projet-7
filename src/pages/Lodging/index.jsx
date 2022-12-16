@@ -3,6 +3,7 @@ import Header from '../../components/Header'
 import Carrousel from '../../components/Carrousel'
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
+import Tag from '../../components/Tags'
 
 function Lodging() {
   let { id } = useParams()
@@ -28,8 +29,23 @@ function Lodging() {
   return (
     <>
       <Header />
-      {lodgingData.map(({ cover, pictures }) => (
-        <Carrousel cover={cover} pictures={pictures} />
+      {lodgingData.map(({ cover, pictures, title, location, host }) => (
+        <>
+          <Carrousel cover={cover} pictures={pictures} />
+          <div className='lodging__title'>
+            {title}
+            <div className='container_profil'>
+              <h2 className='lodging__profil-name'>{host.name}</h2>
+              <img
+                src={host.picture}
+                alt='photo de profil'
+                className='lodging__profil-picture'
+              />
+            </div>
+          </div>
+          <p className='lodging__location'>{location}</p>
+          <Tag />
+        </>
       ))}
     </>
   )
