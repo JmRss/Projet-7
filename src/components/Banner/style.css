@@ -1,5 +1,12 @@
-
-.bannerBackgroundImg, .banner_background{
+.container_banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top:170px;
+    left:-100px;
+}
+.banner_background-img, .banner_background{
     position: absolute;
     width: 1220px;
     height: 223px;
@@ -7,7 +14,7 @@
     top: 171px;
     border-radius: 25px;
 }
-.bannerBackgroundImg{
+.banner_background-img{
     background-image: url(../../assets/images/banner.png);
 }
 .banner_background{

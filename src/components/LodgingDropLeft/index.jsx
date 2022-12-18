@@ -4,7 +4,7 @@ import './style.css'
 import { useState } from 'react'
 import vector from '../../assets/images/Vector.png'
 
-export default function Collapse({ title, description }) {
+export default function LodgingDropLeft({ equipments }) {
   // variables d'état
   const [isOpen, setIsOpen] = useState(false)
 
@@ -14,21 +14,25 @@ export default function Collapse({ title, description }) {
 
   return isOpen ? (
     <>
-      <button key={title} className='button__collapse' onClick={changeState}>
-        {title}
+      <button
+        key='description_lodgingDropdown'
+        className='dropdown'
+        onClick={changeState}
+      >
+        Equipements
         <img src={vector} alt='button' className='button--rotate' />
       </button>
-      <p key={description} className='collapse__description'>
-        {description}
-      </p>
+      <div key={equipments} className='dropdown-description'>
+        <p>{equipments}</p>
+      </div>
     </>
   ) : (
     <button
-      key={title}
-      className='button__collapse-large--open'
+      key='description_lodgingDropdown'
+      className='dropdown'
       onClick={changeState}
     >
-      {title}
+      Equipements
       <img src={vector} alt='button' />
     </button>
   )

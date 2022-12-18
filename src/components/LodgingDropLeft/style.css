@@ -1,0 +1,32 @@
+.dropdown{
+    height: 52px;
+    width: 570px;
+    border-radius: 10px;
+    background-color: #ff6060;
+    font-size: 18px;
+    line-height: 142.6%;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+}
+.dropdown-description{
+    box-sizing: border-box;
+    background: #F7F7F7;
+    border-radius: 10px;
+    width: 570px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.dropdown-description p{
+    width: min-content;
+    margin:0;
+    font-weight:400;
+    font-size:18px;
+    line-height:25.67px;
+    color:#ff6060;
+}
+.dropdown-descriptiontext p{
+    width: auto;
+}

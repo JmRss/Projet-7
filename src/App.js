@@ -1,4 +1,3 @@
-import './App.css'
 //plus besoin de mettre "exact" ainsi que switch depuis la version 6.0
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'

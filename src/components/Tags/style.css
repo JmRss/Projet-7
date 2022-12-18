@@ -1,9 +1,21 @@
+.container_tag{
+    display:inline-flex
+}
 .tag{
-    height: 25px;
-    width: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width:115px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height:25px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
     border-radius: 10px;
     background: #FF6060;
     color:white;
+    margin-right: 10px;
 
 }
 

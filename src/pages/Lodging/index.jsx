@@ -1,9 +1,13 @@
+import { useEffect, useState } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import './style.css'
 import Header from '../../components/Header'
 import Carrousel from '../../components/Carrousel'
-import { useEffect, useState } from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
 import Tag from '../../components/Tags'
+import Rate from '../../components/Rate'
+import LodgingDropLeft from '../../components/LodgingDropLeft'
+import LodgingDropRight from '../../components/LodgingDropRight'
+import Footer from '../../components/Footer'
 
 function Lodging() {
   let { id } = useParams()
@@ -25,28 +29,52 @@ function Lodging() {
     }
     fetchData()
   }, [])
-  console.log(lodgingData)
+
   return (
     <>
       <Header />
-      {lodgingData.map(({ cover, pictures, title, location, host }) => (
-        <>
-          <Carrousel cover={cover} pictures={pictures} />
-          <div className='lodging__title'>
-            {title}
-            <div className='container_profil'>
-              <h2 className='lodging__profil-name'>{host.name}</h2>
-              <img
-                src={host.picture}
-                alt='photo de profil'
-                className='lodging__profil-picture'
-              />
+      {lodgingData.map(
+        ({
+          cover,
+          pictures,
+          title,
+          location,
+          host,
+          tags,
+          rating,
+          description,
+          equipments,
+        }) => (
+          <>
+            <Carrousel cover={cover} pictures={pictures} />
+            <div className='lodging__title'>
+              {title}
+              <div className='container_profil'>
+                <h2 className='lodging__profil-name'>{host.name}</h2>
+                <img
+                  src={host.picture}
+                  alt='photo de profil'
+                  className='lodging__profil-picture'
+                />
+              </div>
             </div>
-          </div>
-          <p className='lodging__location'>{location}</p>
-          <Tag />
-        </>
-      ))}
+            <p className='lodging__location'>{location}</p>
+            <div className='container__tag_rate'>
+              <Tag tags={tags} />
+              <Rate rating={rating} />
+            </div>
+            <div className='container__dropdowns'>
+              <div className='container__dropdown'>
+                <LodgingDropLeft equipments={equipments} />
+              </div>
+              <div className='container__dropdown'>
+                <LodgingDropRight description={description} />
+              </div>
+            </div>
+            <Footer />
+          </>
+        )
+      )}
     </>
   )
 }

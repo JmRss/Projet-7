@@ -1,3 +1,7 @@
+html{
+    display: flex;
+    justify-content: center;
+}
 body{
     width: 1240px;
     padding-left: 100px;
@@ -32,3 +36,25 @@ body{
      padding-bottom: 56px;
 
  }
+@media(max-width: 375px) {
+    html, body, .container{
+        width: 375px;
+    }
+    
+    header{
+        width:80%;
+        position: static;
+        top:0%;
+    }
+    header .logo{
+        height: 47px;
+        width: 145px
+    }
+    .about_banner, .banner_background, .banner_background-img{
+        height: 111px;
+        width: 335px;
+        left: 20px;
+        top: 83px;
+        border-radius: 10px;
+    }
+}

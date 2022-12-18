@@ -25,7 +25,7 @@
     margin-top: 48%;
 
 }
-.button__collapse, .button__collapse--open{
+.button__collapse, .button__collapse-large--open{
     background: #FF6060;
     height: 47px;
     width: 1023px;
@@ -44,12 +44,12 @@
     margin-bottom: 31px;
     z-index:2;
 }
-.button__collapse, .button__collapse--open, .collapse__description{
+.button__collapse, .button__collapse-large--open, .collapse__description{
     margin-right: 100px;
     margin-left: 100px;
 }
 /*icone bouton*/
-.button__collapse--open img{
+.button__collapse-large--open img{
     margin:15px;
     margin-right:20px;
 }

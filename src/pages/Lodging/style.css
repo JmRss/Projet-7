@@ -1,6 +1,7 @@
 .lodging__title{
     position: relative;
     margin-top: 20px;
+    height:55px;
 }
 
 .lodging__title, .lodging__location, .lodging__profil-name{
@@ -12,9 +13,9 @@
 .lodging__location{
     font-size: 18px;
     margin-top:0;
-    height: 45px;
+    height: 30px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 .lodging__profil-picture{
     background: #C4C4C4;
@@ -37,6 +38,24 @@
     position: absolute;
     display: flex;
     justify-content:right;
-    width:98%;
+    width:98.3%;
     top:0%;
+}
+.container__tag_rate{
+    width: 98.9%;;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+}
+.container__dropdowns{
+    width:98%;
+    height:250px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.container__dropdown{
+    display:block;
 }
