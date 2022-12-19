@@ -8,7 +8,8 @@
 }
 .banner_background-img, .banner_background{
     position: absolute;
-    width: 1220px;
+    max-width: 1220px;
+    width:100%;
     height: 223px;
     left: 100px;
     top: 171px;
@@ -16,6 +17,7 @@
 }
 .banner_background-img{
     background-image: url(../../assets/images/banner.png);
+    object-fit: fill;
 }
 .banner_background{
     background: #000000;
@@ -24,7 +26,6 @@
     z-index:2;
 }
 .text_banner{
-
     position: absolute;
     right: 22.14%;
     top: 45.32%;
@@ -33,4 +34,5 @@
     align-items: flex-end;
     color:#ffffff;
     z-index: 3;
+
 }

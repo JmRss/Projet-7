@@ -48,7 +48,7 @@ function Lodging() {
           <>
             <Carrousel cover={cover} pictures={pictures} />
             <div className='lodging__title'>
-              {title}
+              <p>{title}</p>
               <div className='container_profil'>
                 <h2 className='lodging__profil-name'>{host.name}</h2>
                 <img

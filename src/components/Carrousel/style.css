@@ -1,13 +1,15 @@
 .slider{
     height: 415px;
-    width: 1200px;
+    max-width: 1200px;
+    width:100%;
     border-radius: 25px;
-    margin-top: 25%;
+    margin-top: 308px;
     position: relative;
 }
 .image{
     height: 415px;
-    width: 1219px;
+    max-width: 1219px;
+    width:100%;
     border-radius: 25px;
     mix-blend-mode: normal;
     object-fit:cover;

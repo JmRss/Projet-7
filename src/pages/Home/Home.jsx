@@ -4,6 +4,7 @@ import Card from '../../components/Card'
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import './style.css'
+import './responsive.css'
 
 export default function Home() {
   const [data, setData] = useState([])
