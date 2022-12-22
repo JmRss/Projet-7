@@ -5,8 +5,8 @@ import Header from '../../components/Header'
 import Carrousel from '../../components/Carrousel'
 import Tag from '../../components/Tags'
 import Rate from '../../components/Rate'
-import LodgingDropLeft from '../../components/LodgingDropLeft'
 import LodgingDropRight from '../../components/LodgingDropRight'
+import LodgingDropLeft from '../../components/LodgingDropLeft'
 import Footer from '../../components/Footer'
 
 function Lodging() {
@@ -49,26 +49,28 @@ function Lodging() {
             <Carrousel cover={cover} pictures={pictures} />
             <div className='lodging__title'>
               <p>{title}</p>
-              <div className='container_profil'>
-                <h2 className='lodging__profil-name'>{host.name}</h2>
-                <img
-                  src={host.picture}
-                  alt='photo de profil'
-                  className='lodging__profil-picture'
-                />
+              <div className='container__profil__rate'>
+                <div className='container_profil'>
+                  <h2 className='lodging__profil-name'>{host.name}</h2>
+                  <img
+                    src={host.picture}
+                    alt='photo de profil'
+                    className='lodging__profil-picture'
+                  />
+                </div>
+                <Rate rating={rating} />
               </div>
             </div>
             <p className='lodging__location'>{location}</p>
             <div className='container__tag_rate'>
               <Tag tags={tags} />
-              <Rate rating={rating} />
             </div>
             <div className='container__dropdowns'>
               <div className='container__dropdown'>
-                <LodgingDropLeft equipments={equipments} />
+                <LodgingDropLeft description={description} />
               </div>
               <div className='container__dropdown'>
-                <LodgingDropRight description={description} />
+                <LodgingDropRight equipments={equipments} />
               </div>
             </div>
             <Footer />

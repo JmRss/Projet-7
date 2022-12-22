@@ -1,9 +1,10 @@
+import './style.css'
 // //useState   est un hook qui permet d’ajouter le state local React à des composants fonctions
 // //Un hook est une fonction qui permet de « se brancher » (to hook up) sur des fonctionnalités React
 import { useState } from 'react'
 import vector from '../../assets/images/Vector.png'
 
-export default function LodgingDropRight({ description }) {
+export default function LodgingDropRight({ equipments }) {
   // variables d'état
   const [isOpen, setIsOpen] = useState(false)
 
@@ -18,14 +19,20 @@ export default function LodgingDropRight({ description }) {
         className='dropdown'
         onClick={changeState}
       >
-        Description
-        <img src={vector} alt='button' className='button--rotate' />
+        Equipements
+        <img
+          src={vector}
+          alt='button'
+          className='button--rotate button__lodging'
+        />
       </button>
       <div
-        key={description}
+        key={equipments}
         className='dropdown-description dropdown-descriptiontext'
       >
-        <p>{description}</p>
+        {equipments.map((el) => (
+          <p>{el}</p>
+        ))}
       </div>
     </>
   ) : (
@@ -34,8 +41,8 @@ export default function LodgingDropRight({ description }) {
       className='dropdown'
       onClick={changeState}
     >
-      Description
-      <img src={vector} alt='button' />
+      Equipements
+      <img src={vector} alt='button' className='button__lodging' />
     </button>
   )
 }

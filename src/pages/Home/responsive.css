@@ -20,13 +20,11 @@
     }
 }
 @media(max-width:1100px){
-    .text_banner{
+    .text_banner, .text_banner span{ 
         font-size: 37.5px;
         right:0;
         left:0;
-        top:25%;
-        width:100%;
-        height:50px;
+        top:18%;
         display: flex;
         justify-content: center;
     }
@@ -76,9 +74,9 @@
     }
 }
 @media(max-width:600px){
-    .text_banner{
+    .text_banner, .text_banner span{
         font-size: 28px;
-        top:12%;
+        top:2%;
     }
     .container{
         margin-top: 430px;
@@ -103,6 +101,13 @@
     #root .lodging__profil-picture {
         width: 50px;
         height: 50px;
+    }
+    #root .container__profil__rate{
+        display: inline-flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        top:132px;
     }
     #root .dropdown__container {
         margin-top: 440px;
@@ -144,8 +149,13 @@
         font-size:10px;
         line-height: 14px;
     }
+    #root .tag, #root .dropdown{
+        border-radius: 5px;
+    }
     #root .rate{
         height:100px;
+        display: flex;
+        align-items: center;
     }
     #root .rate img{
         height:25px;
@@ -159,6 +169,8 @@
     }
     #root .container_tag{
         line-height: 0;
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 @media(max-width:460px){
@@ -175,6 +187,7 @@
         margin-left: 0;
         text-align: right;
         text-transform: uppercase;
+        border-bottom: white 1px solid;
     }
     .underline_nav{
         border-bottom:1px #FF6060 solid;
@@ -184,15 +197,13 @@
         margin-left: 20px;
     }
     .accueil{
-        width:63px
+        width:63px;
     }
-    .text_banner{
+    .text_banner, .text_banner span{
         font-size:24px;
         line-height: 24px;
-        padding-left:18px;
         width:auto;
-        padding-right: 100px;
-        top:5%;
+        top:16%;
     }
     .container_banner{
         left:0;
@@ -202,8 +213,11 @@
         border-radius: 10px;
         top:85px;
         width:93%;
-        left:10px;
+        left:12px;
         margin-right: 10px;
+    }
+    #root .about_banner-size{
+        height:223px;
     }
     .banner_background-img{
         background: url(../../assets/images/background-banner-tablette.png);
@@ -244,8 +258,15 @@
     #root .container_profil{
         top:160px;
     }
+    #root .container_tag{
+        width:100%;
+    }
+    #root .tag {
+        min-width: 84px;
+        margin-bottom: 10px;
+    }
     #root .dropdown__container {
-        margin-top: 390px;
+        margin-top: 262px;
     }
     #root .button__collapse,
     #root .button__collapse-large--open {
@@ -253,10 +274,12 @@
         height:30px;
         margin-right: 10px;
         margin-left: 5px;
+        margin-bottom: 0;
         font-size:20px;
     }
     #root .button__collapse-large--open img,
-    #root img.button--rotate{
+    #root img.button--rotate,
+    #root .button__lodging{
         height:10px;
         width:18px;
         margin:0;
@@ -268,31 +291,37 @@
         font-weight: 400;
         margin-left: 5px;
         margin-right: 10px;
+        margin-top:0px;
         padding-bottom: 50px;
         line-height: 17px;
+
     }
     #root .right-arrow,
     #root .left-arrow {
         width: 11px;
         height: 20px;
     }
-    #root .tag{
-        min-width: 84px;
-    }
+    
     #root .rate {
-        height: 80px;
+        height:50px;
+        display: flex;
+        align-items: center;
+
     } 
     #root .rate img {
-        height: 18px;
-        width:18px;
+        height: 15px;
+        width:15px;
         margin:2px;
     }
     #root .slider, #root .lodging__title, #root .lodging__location, .container__tag_rate, #root .container__dropdowns {
         width:93%;
         margin-left:3.5%;
     }
+    #root .lodging__location{
+        margin-bottom: 10px;
+    }
     #root .container__dropdowns{
-        margin-top:0;
+        margin-top:15px;
     }
     #root .dropdown{
         height: 30px;
@@ -309,11 +338,15 @@
     .card{
         min-width:93%;
     }
-}
-
-@media(max-width:370px){
-    .text_banner{
-        padding-right:0px;
+    .text_banner,
+    .text_banner span {
+        top: 6%;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    
+    .text_banner {
+        padding-left: 15px;
     }
 }
 

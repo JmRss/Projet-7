@@ -16,10 +16,14 @@
     background: #F7F7F7;
     border-radius: 10px;
     width: 570px;
+    height:249px;
     border-radius: 10px;
+    margin-bottom: 15px;
     padding: 20px;
+    animation: dropdown_textAnimation 600ms ease;
 }
 .dropdown-description p{
+    
     width: min-content;
     margin:0;
     font-weight:400;
@@ -29,4 +33,20 @@
 }
 .dropdown-descriptiontext p{
     width: auto;
+}
+.button__lodging{
+    margin: 5px;
+    transform-origin: center;
+}
+.container__dropdowns {
+    width: 98%;
+    margin-bottom: 15px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.container__dropdown {
+    display: block;
 }

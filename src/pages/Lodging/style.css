@@ -41,27 +41,13 @@
     align-items: center;
 }
 .container_profil{
-    position: absolute;
-    display: flex;
-    justify-content:right;
-    width:98.3%;
-    top:0%;
-}
-.container__tag_rate{
-    width: 98.9%;;
     display:inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
 }
-.container__dropdowns{
-    width:98%;
-    height:250px;
-    padding-top: 20px;
+.container__profil__rate{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.container__dropdown{
-    display:block;
+    flex-direction: column;
+    position: absolute;
+    width: 97%;
+    top:24px;
+    align-items: flex-end;
 }

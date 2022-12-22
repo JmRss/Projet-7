@@ -28,11 +28,10 @@
 .text_banner{
     position: absolute;
     right: 22.14%;
-    top: 45.32%;
-    bottom: 69.04%;
+    top: 12%;
     display: flex;
     align-items: flex-end;
+    flex-wrap: wrap;
     color:#ffffff;
     z-index: 3;
-
 }

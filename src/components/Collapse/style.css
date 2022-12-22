@@ -1,10 +1,11 @@
 @keyframes rotate_icone {
     from {
+        transform-origin: center;
         transform: rotate(0deg);
     }
 
     to {
-        transform: rotate(90deg);
+        transform: rotate(180deg);
     }
 }
 @keyframes dropdown_textAnimation{
@@ -54,14 +55,17 @@
 }
 .button--rotate{
     animation: rotate_icone 300ms both ease-out;
+    margin: 15px;
+    margin-right: 20px;
+
 }
 .collapse__description{
-    animation:dropdown_textAnimation 300ms ease;
+    animation:dropdown_textAnimation 600ms ease;
     width: 85%;
     margin-right: 20px;
     box-sizing: border-box;
     margin-top: -31px;
-    margin-bottom: 0;
+    margin-bottom: 31px;
     padding:20px;
     padding-top: 36px;
     padding-bottom: 19px;

@@ -13,8 +13,8 @@ body{
     margin-top:-171px;
 }
  @font-face {
-     font-family: 'Montserrat';
-     src: url('/fonts/Montserrat.ttf') format('truetype');
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat.ttf') format('truetype');
  }
 
  * {
