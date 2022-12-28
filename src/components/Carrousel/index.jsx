@@ -18,21 +18,29 @@ const Carrousel = ({ pictures }) => {
   if (!Array.isArray(pictures) || pictures.length <= 0) {
     return null
   }
+  if (pictures.length === 1) {
+  }
 
+  const displayNone = pictures.length === 1 ? 'display-none' : ''
   return (
     <section className='slider'>
       <img
         src={arrowLeft}
         alt='fleche gauche'
-        className='left-arrow'
+        className={'left-arrow ' + displayNone}
         onClick={prevSlide}
       />
       <img
         src={arrowRight}
         alt='fleche droite'
-        className='right-arrow'
+        className={'right-arrow ' + displayNone}
         onClick={nextSlide}
       />
+      {/* compter d'images */}
+      <div className='pictures-count'>
+        {current + 1}/{pictures.length}
+      </div>
+
       {pictures.map((el, index) => {
         return (
           <div

@@ -4,7 +4,7 @@ import './style.css'
 import { useState } from 'react'
 import vector from '../../assets/images/Vector.png'
 
-export default function Collapse({ title, description }) {
+export default function Collapse({ title, description, id }) {
   // variables d'état
   const [isOpen, setIsOpen] = useState(false)
 
@@ -24,7 +24,7 @@ export default function Collapse({ title, description }) {
     </>
   ) : (
     <button
-      key={title}
+      key={title + id}
       className='button__collapse-large--open'
       onClick={changeState}
     >

@@ -180,6 +180,7 @@
     header{
         top:20px;
         left:15px;
+        z-index: 5;
     }
     .accueil, .apropos{
         font-size: 14px;
@@ -246,6 +247,9 @@
         width: 221px;
         font-size: 14px;
         margin-top: 133px;
+    }
+    #root .pictures-count{
+        display: none;
     }
     #root .lodging__profil-picture{
         width: 40px;

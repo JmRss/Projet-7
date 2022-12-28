@@ -9,11 +9,21 @@ function Rate({ rating }) {
   return (
     <>
       <div className='rate'>
-        {starArray.map((lvl) =>
+        {starArray.map((lvl, index) =>
           lvl >= rating ? (
-            <img src={fullStar} alt='score en étoiles' className='star' />
+            <img
+              src={fullStar}
+              alt='score en étoiles'
+              className='star'
+              key={index}
+            />
           ) : (
-            <img src={star} alt='score en étoiles' className='star' />
+            <img
+              src={star}
+              alt='score en étoiles'
+              className='star'
+              key={star + index}
+            />
           )
         )}
       </div>

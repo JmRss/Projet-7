@@ -21,7 +21,7 @@ export default function Home() {
       <Banner />
       <div className='container'>
         {data.map(({ title, cover, id }) => (
-          <Card cover={cover} title={title} id={id} />
+          <Card cover={cover} title={title} id={id} key={id} />
         ))}
       </div>
       <Footer />

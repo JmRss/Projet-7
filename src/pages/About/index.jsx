@@ -11,8 +11,13 @@ function About() {
       <Header />
       <AboutBanner />
       <div className='dropdown__container'>
-        {dropdown.map(({ title, description }) => (
-          <Collapse title={title} description={description} />
+        {dropdown.map(({ title, description, id }) => (
+          <Collapse
+            title={title}
+            description={description}
+            id={id}
+            key={title + id}
+          />
         ))}
       </div>
       <Footer />

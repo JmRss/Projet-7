@@ -39,3 +39,17 @@
     transition-duration: 1s;
     transform: scale(1);
 }
+.pictures-count{
+    position:absolute;
+    z-index: 10;
+    width: 100%;
+    color:white;
+    font-size: 18px;
+    bottom: 10px;
+    left:0%;
+    display: flex;
+    justify-content: center;
+}
+.display-none{
+    display: none;
+}

@@ -14,11 +14,7 @@ export default function LodgingDropRight({ equipments }) {
 
   return isOpen ? (
     <>
-      <button
-        key='description_lodgingDropdown'
-        className='dropdown'
-        onClick={changeState}
-      >
+      <button className='dropdown' onClick={changeState}>
         Equipements
         <img
           src={vector}
@@ -26,21 +22,14 @@ export default function LodgingDropRight({ equipments }) {
           className='button--rotate button__lodging'
         />
       </button>
-      <div
-        key={equipments}
-        className='dropdown-description dropdown-descriptiontext'
-      >
+      <div className='dropdown-description dropdown-descriptiontext'>
         {equipments.map((el) => (
-          <p>{el}</p>
+          <p key={el}>{el}</p>
         ))}
       </div>
     </>
   ) : (
-    <button
-      key='description_lodgingDropdown'
-      className='dropdown'
-      onClick={changeState}
-    >
+    <button className='dropdown' onClick={changeState}>
       Equipements
       <img src={vector} alt='button' className='button__lodging' />
     </button>

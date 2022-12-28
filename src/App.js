@@ -10,7 +10,7 @@ function App() {
     <main className='App'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='*' element={<Error />} />
+        <Route path='/*' element={<Error />} />
         <Route path='/about' element={<About />} />
         <Route path='/lodging/:id' element={<Lodging />} />
       </Routes>

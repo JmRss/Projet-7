@@ -13,11 +13,7 @@ export default function LodgingDropLeft({ description }) {
 
   return isOpen ? (
     <>
-      <button
-        key='description_lodgingDropdown'
-        className='dropdown'
-        onClick={changeState}
-      >
+      <button className='dropdown' onClick={changeState}>
         Description
         <img
           src={vector}
@@ -33,11 +29,7 @@ export default function LodgingDropLeft({ description }) {
       </div>
     </>
   ) : (
-    <button
-      key='description_lodgingDropdown'
-      className='dropdown'
-      onClick={changeState}
-    >
+    <button className='dropdown' onClick={changeState}>
       Description
       <img src={vector} alt='button' className='button__lodging' />
     </button>

@@ -44,33 +44,45 @@ function Lodging() {
           rating,
           description,
           equipments,
+          id,
         }) => (
           <>
-            <Carrousel cover={cover} pictures={pictures} />
+            <Carrousel cover={cover} pictures={pictures} key={title + id} />
             <div className='lodging__title'>
-              <p>{title}</p>
+              <p key={title + cover}>{title}</p>
               <div className='container__profil__rate'>
                 <div className='container_profil'>
-                  <h2 className='lodging__profil-name'>{host.name}</h2>
+                  <h2 className='lodging__profil-name' key={host.id}>
+                    {host.name}
+                  </h2>
                   <img
                     src={host.picture}
                     alt='photo de profil'
                     className='lodging__profil-picture'
+                    key={host}
                   />
                 </div>
-                <Rate rating={rating} />
+                <Rate rating={rating} key={rating + id} />
               </div>
             </div>
-            <p className='lodging__location'>{location}</p>
+            <p className='lodging__location' key={location + id}>
+              {location}
+            </p>
             <div className='container__tag_rate'>
-              <Tag tags={tags} />
+              <Tag tags={tags} key={tags + id} />
             </div>
             <div className='container__dropdowns'>
               <div className='container__dropdown'>
-                <LodgingDropLeft description={description} />
+                <LodgingDropLeft
+                  description={description}
+                  key={description + id}
+                />
               </div>
               <div className='container__dropdown'>
-                <LodgingDropRight equipments={equipments} />
+                <LodgingDropRight
+                  equipments={equipments}
+                  key={equipments + id}
+                />
               </div>
             </div>
             <Footer />
