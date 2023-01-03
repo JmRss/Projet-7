@@ -1,4 +1,6 @@
-
+.error_code, .error_text, .link{
+    font-family: 'Montserrat-Medium';
+}
 .error_code{
     font-size: 288px;
     font-weight:700;

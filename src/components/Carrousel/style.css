@@ -6,7 +6,7 @@
     margin-top: 308px;
     position: relative;
 }
-.image{
+.slider_pic{
     height: 415px;
     max-width: 1219px;
     width:100%;
@@ -38,6 +38,7 @@
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1);
+    height: 100%;
 }
 .pictures-count{
     position:absolute;

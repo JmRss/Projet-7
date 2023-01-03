@@ -14,10 +14,6 @@
     #root .dropdown,#root .dropdown-description{
         width:500px;
     }
-    #root .lodging__title p {
-        width: 80%;
-        font-size: 30px;
-    }
 }
 @media(max-width:1100px){
     .text_banner, .text_banner span{ 
@@ -38,20 +34,10 @@
     #root .dropdown, #root .dropdown-description{
         width:400px;
     }
-    .container__tag_rate{
-        flex-wrap: wrap;
-    }
-    #root .lodging__title p {
-        font-size: 27px;
-        line-height:30px;
-    }
 }
 @media(max-width:900px){
     #root .dropdown, #root .dropdown-description{
         width:350px;
-    }
-    #root .lodging__title p{
-        font-size: 25px;
     }
     #root .lodging__location{
         font-size: 15px;
@@ -62,15 +48,26 @@
     #root .dropdown, #root .dropdown-description{
         width:260px;
     }
-    #root .lodging__title p{
-        font-size: 21px;
-    }
     #root .lodging__location {
         font-size: 15px;
         height: 20px;
     }
     #root .lodging__profil-name{
         font-size:15px;
+    }
+    #root .container_profil_and_title{
+        margin: 0px;
+        flex-direction: column;
+    }
+    #root .container_profil{
+        flex-direction: row-reverse;
+        height: auto;
+        align-items: center;
+        width:95.5%;
+    }
+    #root .container__title h2{
+        font-size: 18px;
+        line-height: 25.6px;
     }
 }
 @media(max-width:600px){
@@ -92,6 +89,10 @@
     .logo{
         left:1%;
     }
+    .banner_background-img{
+        background: url('../src/assets/images/banner-home-responsive.png');
+        object-fit: cover;
+    }
     .banner_background,
     .banner_background-img, 
     .container_banner .about_banner{
@@ -102,15 +103,8 @@
         width: 50px;
         height: 50px;
     }
-    #root .container__profil__rate{
-        display: inline-flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        top:132px;
-    }
     #root .dropdown__container {
-        margin-top: 440px;
+        margin-top: 480px;
     }
     #root .button__collapse,#root
     .button__collapse-large--open,
@@ -119,13 +113,22 @@
         margin-top: 20px;
         width: 100%;
     }
+    #root .container__dropdown, #root .dropdown{
+        margin-top: 0;
+    }
+    #root .container__dropdown{
+        margin-bottom:20px;
+    }
     #root .dropdown-description{
         margin-top: 0;
+        padding: 23px 7px 1px 11.5px;
+        height: auto;
+        
     }
     #root .dropdown-description p{
         font-size: 14px;
     }
-    #root .slider, #root .image{
+    #root .slider, #root .slider_pic{
         height:225px;
         border-radius: 10px;
     }
@@ -142,9 +145,6 @@
         margin-top:50px;
         margin-bottom: 65px;
     }
-    #root .lodging__title p{
-        width:100%;
-    }
     #root .tag{
         font-size:10px;
         line-height: 14px;
@@ -159,10 +159,6 @@
     }
     #root .rate img{
         height:25px;
-    }
-    #root .container_profil{
-        top:150px;
-        align-items: center;
     }
     #root .lodging__profil-name{
         font-size: 13px;
@@ -180,6 +176,7 @@
     header{
         top:20px;
         left:15px;
+        width: 91%;
         z-index: 5;
     }
     .accueil, .apropos{
@@ -213,15 +210,12 @@
         height:111px;
         border-radius: 10px;
         top:85px;
-        width:93%;
-        left:12px;
+        width:91%;
+        left:4.5%;
         margin-right: 10px;
     }
-    #root .about_banner-size{
+    #root .about_banner .--size{
         height:223px;
-    }
-    .banner_background-img{
-        background: url(../../assets/images/background-banner-tablette.png);
     }
     .container{
         margin-top: 310px;
@@ -251,6 +245,9 @@
     #root .pictures-count{
         display: none;
     }
+    #root .container_profil_and_title{
+        margin-left: 3.5%;
+    }
     #root .lodging__profil-picture{
         width: 40px;
         height: 40px;
@@ -258,26 +255,21 @@
     #root .lodging__profil-name{
         font-size: 12px;
         margin-top: 0;
-    }
-    #root .container_profil{
-        top:160px;
+        line-height: 17px;
     }
     #root .container_tag{
         width:100%;
     }
     #root .tag {
         min-width: 84px;
+        height:18px;
+        padding: 0;
         margin-bottom: 10px;
-    }
-    #root .dropdown__container {
-        margin-top: 262px;
     }
     #root .button__collapse,
     #root .button__collapse-large--open {
         width: 91%;
         height:30px;
-        margin-right: 10px;
-        margin-left: 5px;
         margin-bottom: 0;
         font-size:20px;
     }
@@ -293,9 +285,7 @@
         font-size:15px;
         padding: 15px;
         font-weight: 400;
-        margin-left: 5px;
-        margin-right: 10px;
-        margin-top:0px;
+        margin: 0;
         padding-bottom: 50px;
         line-height: 17px;
 
@@ -317,18 +307,23 @@
         width:15px;
         margin:2px;
     }
-    #root .slider, #root .lodging__title, #root .lodging__location, .container__tag_rate, #root .container__dropdowns {
+    #root .slider, #root .container__dropdowns {
         width:93%;
         margin-left:3.5%;
     }
     #root .lodging__location{
+        margin-top: 5px;
         margin-bottom: 10px;
+        font-weight: 500;
     }
     #root .container__dropdowns{
-        margin-top:15px;
+        margin-top:16px;
+        padding: 0;
     }
     #root .dropdown{
         height: 30px;
+        padding-left: 10px;
+        font-size: 13px;
     }
     footer p{
         font-size: 19px;
@@ -336,11 +331,9 @@
     }
 }
 @media(max-width:375px){
-    .banner_background-img {
-        background: url('../../assets/images/background_responsive.svg');
-    }
+
     .card{
-        min-width:93%;
+        min-width:91%;
     }
     .text_banner,
     .text_banner span {

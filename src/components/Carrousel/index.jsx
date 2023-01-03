@@ -18,10 +18,9 @@ const Carrousel = ({ pictures }) => {
   if (!Array.isArray(pictures) || pictures.length <= 0) {
     return null
   }
-  if (pictures.length === 1) {
-  }
 
   const displayNone = pictures.length === 1 ? 'display-none' : ''
+
   return (
     <section className='slider'>
       <img
@@ -37,18 +36,18 @@ const Carrousel = ({ pictures }) => {
         onClick={nextSlide}
       />
       {/* compter d'images */}
-      <div className='pictures-count'>
+      <div className={'pictures-count ' + displayNone}>
         {current + 1}/{pictures.length}
       </div>
 
-      {pictures.map((el, index) => {
+      {pictures.map((el, index, title) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}
             key={index}
           >
             {index === current && (
-              <img src={el} alt='travel image' className='image' />
+              <img src={el} alt='photo du logement' className='slider_pic' />
             )}
           </div>
         )

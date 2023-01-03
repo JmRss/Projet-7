@@ -15,7 +15,7 @@ export default function LodgingDropRight({ equipments }) {
   return isOpen ? (
     <>
       <button className='dropdown' onClick={changeState}>
-        Equipements
+        Équipements
         <img
           src={vector}
           alt='button'
@@ -30,7 +30,7 @@ export default function LodgingDropRight({ equipments }) {
     </>
   ) : (
     <button className='dropdown' onClick={changeState}>
-      Equipements
+      Équipements
       <img src={vector} alt='button' className='button__lodging' />
     </button>
   )

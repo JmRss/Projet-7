@@ -48,10 +48,16 @@ function Lodging() {
         }) => (
           <>
             <Carrousel cover={cover} pictures={pictures} key={title + id} />
-            <div className='lodging__title'>
-              <p key={title + cover}>{title}</p>
-              <div className='container__profil__rate'>
-                <div className='container_profil'>
+            <div className='container_profil_and_title'>
+              <div className='container__title'>
+                <h2 key={title + cover}>{title}</h2>
+                <p className='lodging__location' key={location + id}>
+                  {location}
+                </p>
+                <Tag tags={tags} key={tags + id} />
+              </div>
+              <div className='container_profil'>
+                <div className='profil_name_and_picture'>
                   <h2 className='lodging__profil-name' key={host.id}>
                     {host.name}
                   </h2>
@@ -64,12 +70,6 @@ function Lodging() {
                 </div>
                 <Rate rating={rating} key={rating + id} />
               </div>
-            </div>
-            <p className='lodging__location' key={location + id}>
-              {location}
-            </p>
-            <div className='container__tag_rate'>
-              <Tag tags={tags} key={tags + id} />
             </div>
             <div className='container__dropdowns'>
               <div className='container__dropdown'>

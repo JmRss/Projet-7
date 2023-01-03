@@ -1,35 +1,37 @@
-.lodging__title{
-    position: relative;
-    margin-top: 10px;
-    margin-bottom:10px;
-    height:55px;
-    display: flex;
-    align-items: flex-end;
-}
 
-.lodging__title p, .lodging__location, .lodging__profil-name{
+.container_profil_and_title {
+    width: 97%;
+    display: inline-flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+.container_profil {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:130px;
+}
+.container__title h2,
+.lodging__location,
+.lodging__profil-name {
     font-size: 36px;
-    font-weight: 500;
+    font-weight: 600;
     color: #FF6060;
-    margin-bottom: 0;   
+    margin: 0;
+    line-height: 50px;
 }
-.lodging__title p{
-    line-height: 20px;
-}
-.lodging__location{
+.lodging__location {
     font-size: 18px;
-    margin-top:0;
     height: 30px;
     display: flex;
     align-items: center;
 }
-.lodging__profil-picture{
-    background: #C4C4C4;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
+.profil_name_and_picture{
+    display: inline-flex;
+    justify-content: right;
 }
-.lodging__profil-name{
+.lodging__profil-name {
     font-size: 18px;
     line-height: 25px;
     font-weight: 600;
@@ -40,14 +42,9 @@
     display: flex;
     align-items: center;
 }
-.container_profil{
-    display:inline-flex;
-}
-.container__profil__rate{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 97%;
-    top:24px;
-    align-items: flex-end;
+.lodging__profil-picture {
+    background: #C4C4C4;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }

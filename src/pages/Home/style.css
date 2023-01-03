@@ -1,5 +1,4 @@
 
-
 html{
     display: flex;
     justify-content: center;
@@ -12,31 +11,39 @@ body{
     margin:0;
     margin-top:-171px;
 }
- @font-face {
+@font-face {
     font-family: 'Montserrat';
     src: url('/fonts/Montserrat.ttf') format('truetype');
- }
+}
+@font-face {
+    font-family: 'Montserrat-Medium';
+    src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
 
- * {
+* {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;    
     font-size: 48px;
     line-height: 68px;
     letter-spacing: 0em;
     text-align: left;
- }
+}
 
- .container {
-     background: #F7F7F7;
-     max-width: 1220px;
-     border-radius: 25px 25px 0 0;
-     margin-top: 50%;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-wrap: wrap;
-     flex-direction: row;
-     padding-top: 56px;
-     padding-bottom: 56px;
-
- }
+.container {
+    background: #F7F7F7;
+    max-width: 1220px;
+    border-radius: 25px 25px 0 0;
+    margin-top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 56px;
+    padding-bottom: 56px;
+}
+.container_about{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

@@ -4,6 +4,8 @@ header {
     width:93.5%;
     height: 68px;
     top: 40px;
+    display: flex;
+    align-items: center;
 }
 nav{
     display:flex;
@@ -11,7 +13,6 @@ nav{
     height: 67px;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 160px;
 }
 .accueil, .apropos {
     color: #FF6060;
@@ -19,9 +20,6 @@ nav{
     font-size: 24px;
     line-height: 25px;
     margin-left: 57px;
-    /* display: inline-flex;
-    align-items: flex-end;
-    justify-content: center; */
     /* evite le décallage quand passe en souslignage couleur */
     border-bottom: white 2px solid;
     

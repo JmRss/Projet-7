@@ -17,7 +17,7 @@
 }
 .banner_background-img{
     background-image: url(../../assets/images/banner.png);
-    object-fit: fill;
+    object-fit: cover;
 }
 .banner_background{
     background: #000000;
@@ -34,4 +34,11 @@
     flex-wrap: wrap;
     color:#ffffff;
     z-index: 3;
+}
+
+#root .about_banner {
+    background-image: url(../../assets/images/AboutBanner.png);
+}
+.banner_background-img .display-none{
+    display:none;
 }

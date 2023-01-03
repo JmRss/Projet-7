@@ -1,7 +1,7 @@
-//plus besoin de mettre "exact" ainsi que switch depuis la version 6.0
+//plus besoin de mettre "exact" ainsi que switch depuis la version 6.0 de react-router-dom
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/Home/Home'
-import Error from './components/Error/index'
+import Error from './pages/Error/index'
 import About from './pages/About'
 import Lodging from './pages/Lodging/index'
 

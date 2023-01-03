@@ -1,5 +1,5 @@
 import Header from '../../components/Header'
-import AboutBanner from '../../components/AboutBanner'
+import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse/index'
 import Footer from '../../components/Footer'
 import { dropdown } from '../../datas/Dropdown'
@@ -7,9 +7,9 @@ import '../../components/Collapse/style.css'
 
 function About() {
   return (
-    <>
+    <div className='container_about'>
       <Header />
-      <AboutBanner />
+      <Banner />
       <div className='dropdown__container'>
         {dropdown.map(({ title, description, id }) => (
           <Collapse
@@ -21,7 +21,7 @@ function About() {
         ))}
       </div>
       <Footer />
-    </>
+    </div>
   )
 }
 

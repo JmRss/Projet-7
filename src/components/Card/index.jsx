@@ -8,7 +8,12 @@ function Card({ cover, title, id }) {
         <p className='text_lodging' key={title + id}>
           {title}
         </p>
-        <img src={cover} alt='' key={cover + id} className='cover' />
+        <img
+          src={cover}
+          alt={'photo ' + title}
+          key={cover + id}
+          className='cover'
+        />
       </Link>
     </>
   )
