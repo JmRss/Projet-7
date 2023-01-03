@@ -9,7 +9,7 @@ function Banner() {
   const bannerAbout =
     location.pathname === '/about' ? 'about_banner --size' : ''
   const displayNone = location.pathname === '/about' ? 'display-none' : ''
-  console.log(displayNone)
+
   return (
     <div className={'container_banner ' + bannerAbout}>
       <div className={'banner_background ' + bannerAbout}></div>

@@ -40,7 +40,7 @@ const Carrousel = ({ pictures }) => {
         {current + 1}/{pictures.length}
       </div>
 
-      {pictures.map((el, index, title) => {
+      {pictures.map((el, index) => {
         return (
           <div
             className={index === current ? 'slide active' : 'slide'}

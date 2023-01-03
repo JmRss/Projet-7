@@ -45,48 +45,38 @@ function Lodging() {
           description,
           equipments,
           id,
+          index,
         }) => (
-          <>
-            <Carrousel cover={cover} pictures={pictures} key={title + id} />
+          <div key={title + id}>
+            <Carrousel cover={cover} pictures={pictures} />
             <div className='container_profil_and_title'>
               <div className='container__title'>
-                <h2 key={title + cover}>{title}</h2>
-                <p className='lodging__location' key={location + id}>
-                  {location}
-                </p>
-                <Tag tags={tags} key={tags + id} />
+                <h2>{title}</h2>
+                <p className='lodging__location'>{location}</p>
+                <Tag tags={tags} />
               </div>
               <div className='container_profil'>
                 <div className='profil_name_and_picture'>
-                  <h2 className='lodging__profil-name' key={host.id}>
-                    {host.name}
-                  </h2>
+                  <h2 className='lodging__profil-name'>{host.name}</h2>
                   <img
                     src={host.picture}
                     alt='photo de profil'
                     className='lodging__profil-picture'
-                    key={host}
                   />
                 </div>
-                <Rate rating={rating} key={rating + id} />
+                <Rate rating={rating} />
               </div>
             </div>
             <div className='container__dropdowns'>
               <div className='container__dropdown'>
-                <LodgingDropLeft
-                  description={description}
-                  key={description + id}
-                />
+                <LodgingDropLeft description={description} />
               </div>
               <div className='container__dropdown'>
-                <LodgingDropRight
-                  equipments={equipments}
-                  key={equipments + id}
-                />
+                <LodgingDropRight equipments={equipments} />
               </div>
             </div>
             <Footer />
-          </>
+          </div>
         )
       )}
     </>
