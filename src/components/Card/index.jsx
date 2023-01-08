@@ -1,7 +1,7 @@
 import './style.css'
 import { Link } from 'react-router-dom'
 //recupére les props:
-function Card({ cover, title, id }) {
+export default function Card({ cover, title, id }) {
   return (
     <>
       <Link to={'/lodging/' + id} className='card'>
@@ -18,5 +18,3 @@ function Card({ cover, title, id }) {
     </>
   )
 }
-
-export default Card

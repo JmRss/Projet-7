@@ -9,7 +9,7 @@ import LodgingDropRight from '../../components/LodgingDropRight'
 import LodgingDropLeft from '../../components/LodgingDropLeft'
 import Footer from '../../components/Footer'
 
-function Lodging() {
+export default function Lodging() {
   let { id } = useParams()
   const [lodgingData, setLodgingData] = useState([])
   const navigate = useNavigate()
@@ -82,5 +82,3 @@ function Lodging() {
     </>
   )
 }
-
-export default Lodging

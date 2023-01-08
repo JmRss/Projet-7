@@ -2,7 +2,7 @@ import Header from '../../components/Header'
 import { Link } from 'react-router-dom'
 import './style.css'
 
-function Error() {
+export default function Error() {
   return (
     <section className='error_page'>
       <Header />
@@ -16,5 +16,3 @@ function Error() {
     </section>
   )
 }
-
-export default Error

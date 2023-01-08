@@ -5,7 +5,7 @@ import Footer from '../../components/Footer'
 import { dropdown } from '../../datas/Dropdown'
 import '../../components/Collapse/style.css'
 
-function About() {
+export default function About() {
   return (
     <div className='container_about'>
       <Header />
@@ -24,5 +24,3 @@ function About() {
     </div>
   )
 }
-
-export default About

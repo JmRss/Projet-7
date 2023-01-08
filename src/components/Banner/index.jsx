@@ -1,11 +1,11 @@
 import './style.css'
 import { useLocation } from 'react-router-dom'
 
-function Banner() {
+export default function Banner() {
   // récupére le "path"
   const location = useLocation()
 
-  // si on se trouve sur la page A Propos, alors rajout d'une classe pour changer l'image et dimensions
+  // si on se trouve sur la page A Propos, rajout d'une classe pour changer l'image et dimensions
   const bannerAbout =
     location.pathname === '/about' ? 'about_banner --size' : ''
   const displayNone = location.pathname === '/about' ? 'display-none' : ''
@@ -24,5 +24,3 @@ function Banner() {
     </div>
   )
 }
-
-export default Banner
