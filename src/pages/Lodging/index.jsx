@@ -64,7 +64,7 @@ export default function Lodging() {
                     className='lodging__profil-picture'
                   />
                 </div>
-                <Rate rating={rating} />
+                <Rate rating={rating} index={index} />
               </div>
             </div>
             <div className='container__dropdowns'>
