@@ -11,6 +11,8 @@
     justify-content: space-between;
     align-items: center;
     border: none;
+    position: relative;
+    z-index:2;
 }
 .dropdown-description{
     box-sizing: border-box;
