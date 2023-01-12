@@ -120,9 +120,11 @@
         margin-bottom:20px;
     }
     #root .dropdown-description{
+
         margin-top: 0;
         padding: 23px 7px 1px 11.5px;
         height: auto;
+        min-height: auto;
         
     }
     #root .dropdown-description p{

@@ -19,14 +19,13 @@
     background: #F7F7F7;
     border-radius: 10px;
     width: 570px;
-    height:249px;
+    min-height:249px;
     border-radius: 10px;
     margin-bottom: 15px;
     padding: 20px;
     animation: dropdown_textAnimation 600ms ease;
 }
 .dropdown-description p{
-    
     width: min-content;
     margin:0;
     font-weight:400;
