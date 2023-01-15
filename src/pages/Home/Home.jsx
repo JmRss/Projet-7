@@ -4,7 +4,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import './style.css'
 import '../../responsive.css'
-import useFetch from '../../utils/hooks'
+import { useFetch } from '../../utils/hooks'
 
 export default function Home() {
   const { data, isLoading, error } = useFetch('../lodging.json')
