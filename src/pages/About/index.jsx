@@ -11,12 +11,11 @@ export default function About() {
       <Header />
       <Banner />
       <div className='dropdown__container'>
-        {dropdown.map(({ title, description, id }) => (
+        {dropdown.map(({ title, description, index }) => (
           <Collapse
             title={title}
             description={description}
-            id={id}
-            key={title + id}
+            key={title + index}
           />
         ))}
       </div>
